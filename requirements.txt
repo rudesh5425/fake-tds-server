@@ -4,3 +4,6 @@ python-multipart
 pydantic
 jinja2
 beautifulsoup4
+fastapi
+uvicorn[standard]
+python-multipart
