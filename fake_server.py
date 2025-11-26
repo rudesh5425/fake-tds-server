@@ -207,9 +207,7 @@ async def submit(req: Request):
     return {"correct": False, "reason": "Wrong answer", "url": next_url}
 
 
-# -----------------------------
-# RUN SERVER (Railway)
-# -----------------------------
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8001))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))   # Railway injects PORT
+    uvicorn.run("fake_server:app", host="0.0.0.0", port=port, reload=False)
