@@ -1,3 +1,6 @@
 fastapi
 uvicorn
 python-multipart
+pydantic
+jinja2
+beautifulsoup4
